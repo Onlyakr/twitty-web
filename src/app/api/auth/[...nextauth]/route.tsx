@@ -10,7 +10,7 @@ const handler = NextAuth({
   ],
   secret: process.env.NEXTAUTH_SECRET,
   session: {
-    strategy: "jwt", // ✅ ใช้ JWT เพื่อให้ Middleware อ่านค่าได้
+    strategy: "jwt",
   },
   callbacks: {
     async session({ session }) {
@@ -18,7 +18,7 @@ const handler = NextAuth({
     },
     async jwt({ token, user }) {
       if (user) {
-        token.id = user.id; // เก็บ user id ใน token
+        token.id = user.id;
       }
       return token;
     },
