@@ -37,7 +37,7 @@ const Navbar = () => {
 
   if (session) {
     return (
-      <nav className="w-screen h-auto px-12 py-4 text-[#171717] flex justify-center items-center">
+      <nav className="w-screen h-[10vh] px-12 py-4 text-[#171717] flex justify-center items-center">
         <div className="relative container max-h-[80px] mx-auto px-16 py-4 bg-white flex justify-between items-center rounded-full shadow-lg shadow-white z-50">
           <div className="flex items-center space-x-2">
             <Link href="/home" className="font-medium text-xl">
@@ -81,7 +81,7 @@ const Navbar = () => {
     );
   }
   return (
-    <nav className="w-screen h-auto px-12 py-4 text-[#171717] flex justify-center items-center">
+    <nav className="w-screen h-[10vh] px-12 py-4 text-[#171717] flex justify-center items-center">
       <div className="container max-h-[80px] mx-auto px-16 py-4 bg-white flex justify-between items-center rounded-full shadow-lg shadow-white">
         <div className="flex items-center space-x-2">
           <Link href="/home" className="font-medium text-xl">
